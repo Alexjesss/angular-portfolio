@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  height: 68px;
+  background-color: #d50f3dfc;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 10;
+  position: fixed;
+  box-shadow: 0 0 3px #3d3a6f;
+  top: 0;
+  transition: all 0.3s;
+  transition-timing-function: ease-in;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  color: ivory;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.navbarlinks-left {
+  margin: 6px 21px 6px 21px;
+  position: relative;
+  display: inline-block;
+}
+
+.navbarlinks-left::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  height: 1px;
+  background: white;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbarlinks-left:hover::before {
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.sticky {
+  background-color: #141414;
+  z-index: 100;
+}
+
