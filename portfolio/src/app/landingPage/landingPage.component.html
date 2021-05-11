@@ -1,0 +1,23 @@
+<header>
+  <div class="logo ml-5 mt-5">
+    <img class="becode" alt="Becode logo" src="assets/becode.png"/>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="background-video" role="main">
+        <video #video (canplay)="video.play()" (loadedmetadata)="video.muted = true" class="video" playsinline
+               autoplay muted loop>
+          <source src="../../assets/background-video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="overlay"></div>
+      <div class="container px-md-3 px-sm-0">
+        <div class="button p-2 text-center mx-auto">
+          <a routerLink="homepage" routerLinkActive="active" class="welcome-button p-2">Enter</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</header>
+
