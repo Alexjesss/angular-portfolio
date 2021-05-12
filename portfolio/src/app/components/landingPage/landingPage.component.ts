@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -12,6 +12,8 @@ export class LandingPageComponent implements OnInit {
 
   constructor() { }
 
+  @ViewChild('hero') hero: ElementRef;
+
   ngOnInit(): void {
   }
 
@@ -24,7 +26,8 @@ const mouseY = event.clientY;
 const calculateX = mouseX / (this.windowWidth / 7);
 const calculateY = mouseY / (this.windowHeight / 7);
 
-video.style.transform = 'translate(-' + calculateX.toString() + '%,-' + calculateY.toString() + '%)';
+// video.style.transform = 'translate(-' + calculateX.toString() + '%,-' + calculateY.toString() + '%)';
 }
 
-hero.addEventListener('mousemove', moveBackground(event));
+
+// hero.addEventListener('mousemove', moveBackground(event));

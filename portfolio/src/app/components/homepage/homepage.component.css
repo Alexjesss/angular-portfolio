@@ -1,0 +1,22 @@
+.hero {
+  position: fixed;
+  height: 700px;
+  width: 100%;
+}
+
+#wave {
+bottom: 0;
+height: 234.67px;
+background-image: url(../../../assets/wave.svg);
+background-position: -780px;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
