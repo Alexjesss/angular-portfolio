@@ -1,7 +1,7 @@
 
 .hero {
   position: fixed;
-  height: 700px;
+  height: 680px;
   width: 100%;
   z-index: -1;
 }
@@ -51,6 +51,7 @@
   background-color: #ebf2f1;
   padding-top: 450px;
   padding-bottom: 250px;
+  position: absolute;
 }
 
 .fourth-section {
@@ -59,4 +60,23 @@
   background-color: ivory;
   padding-top: 450px;
   padding-bottom: 250px;
+}
+
+.text {
+  position: relative;
+  float: right;
+  top: -316px;
+  right: 500px;
+}
+
+#droplets {
+  background: url(../../../assets/droplets.png) no-repeat no-repeat;
+  position: relative;
+  top: -497px;
+  bottom: 0;
+  left: 0;
+  height: 500px;
+  opacity: 0.8;
+  width: 30%;
+  transform: scale(0.5);
 }
