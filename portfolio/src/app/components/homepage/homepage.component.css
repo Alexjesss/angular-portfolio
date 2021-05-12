@@ -3,13 +3,14 @@
   position: fixed;
   height: 700px;
   width: 100%;
+  z-index: -1;
 }
 
 #wave {
-bottom: 0;
-height: 234.67px;
-background-image: url(../../../assets/wave.svg);
-background-position: -780px;
+  bottom: 10px;
+  height: 183px;
+  background-image: url(../../../assets/wave.svg);
+  background-position: -759px;
 }
 
 .wave {
@@ -20,4 +21,42 @@ background-position: -780px;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#wave2 {
+  bottom: -684px;
+  height: 183px;
+  background-image: url(../../../assets/wave2.svg);
+  background-position: -759px;
+}
+
+.wave2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second-section {
+  width: 100%;
+  height: 700px;
+}
+
+.third-section {
+  width: 100%;
+  height: 500px;
+  background-color: #ebf2f1;
+  padding-top: 450px;
+  padding-bottom: 250px;
+}
+
+.fourth-section {
+  width: 100%;
+  height: 500px;
+  background-color: ivory;
+  padding-top: 450px;
+  padding-bottom: 250px;
 }
