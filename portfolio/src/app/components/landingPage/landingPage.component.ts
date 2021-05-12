@@ -13,3 +13,8 @@ export class LandingPageComponent implements OnInit {
   }
 
 }
+
+function moveBackground(event): void {
+const mouseX = event.clientX;
+const mouseY = event.clientY;
+}
