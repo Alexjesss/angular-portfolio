@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,4 +20,11 @@ export class LandingPageComponent implements OnInit {
 function moveBackground(event): void {
 const mouseX = event.clientX;
 const mouseY = event.clientY;
+
+const calculateX = mouseX / (this.windowWidth / 7);
+const calculateY = mouseY / (this.windowHeight / 7);
+
+video.style.transform = 'translate(-' + calculateX.toString() + '%,-' + calculateY.toString() + '%)';
 }
+
+hero.addEventListener('mousemove', moveBackground(event));
