@@ -60,7 +60,7 @@ a {
 }
 
 .sticky {
-  background-color: #141414;
+  background-color: transparent;
   z-index: 100;
 }
 
