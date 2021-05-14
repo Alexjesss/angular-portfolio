@@ -1,5 +1,5 @@
 import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
-import {animate, transition, trigger} from '@angular/animations';
+
 
 @Component({
   selector: 'app-header',
@@ -18,12 +18,7 @@ export class HeaderComponent implements OnInit {
   onWindowScroll(){
     const windowScroll = window.pageYOffset;
 
-    if (windowScroll > this.header.nativeElement.offsetHeight){
-      this.sticky = true;
-    }
-    else {
-      this.sticky = false;
-    }
+    this.sticky = windowScroll > this.header.nativeElement.offsetHeight;
   }
 
   constructor() { }

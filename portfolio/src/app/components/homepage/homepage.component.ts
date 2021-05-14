@@ -9,15 +9,16 @@ import AOS from 'aos';
 export class HomepageComponent implements OnInit {
 
   initialTop = 0;
-  parallaxRatio = 1;
+  parallaxRatio = 0.8;
 
   @ViewChild('parallax') parallax: ElementRef;
+  @ViewChild('para') para: ElementRef;
 
   @HostListener('window:scroll', ['$event'])
   // tslint:disable-next-line:typedef
   onWindowScroll(event){
-
     this.parallax.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
+    this.para.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
   }
 
   constructor() { }

@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 h3 {
   color: #171717;
 }
@@ -13,7 +17,7 @@ p { color: #646464;
 }
 
 #wave {
-  bottom: 10px;
+  bottom: -4px;
   height: 183px;
   background-image: url(../../../assets/wave.svg);
   background-position: -759px;
@@ -87,6 +91,18 @@ p { color: #646464;
   opacity: 0.8;
   width: 30%;
   transform: scale(0.5);
+}
+
+#droplets2 {
+  background: url(../../../assets/droplets.png) no-repeat no-repeat;
+  position: relative;
+  top: 23px;
+  bottom: 0;
+  left: 1298px;
+  height: 500px;
+  opacity: 0.8;
+  width: 30%;
+  transform: scale(2.5);
 }
 
 @keyframes animated {

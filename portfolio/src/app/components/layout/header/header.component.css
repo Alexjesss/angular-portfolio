@@ -8,8 +8,7 @@
   position: fixed;
   box-shadow: 0 0 3px #3d3a6f;
   top: 0;
-  transition-timing-function: ease-in;
-  transition: background 800ms linear;
+  transition-delay: 10s;
 }
 
 li {
@@ -28,6 +27,7 @@ a {
   margin: 6px 21px 6px 21px;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .navbarlinks-left::before {
