@@ -1,15 +1,15 @@
 .navbar {
   display: flex;
   height: 68px;
-  background-color: #d50f3dfc;
+  background: linear-gradient(90deg, #467585 0%, #05424e 50%);
   width: 100%;
   justify-content: space-between;
   z-index: 10;
   position: fixed;
   box-shadow: 0 0 3px #3d3a6f;
   top: 0;
-  transition: all 0.3s;
   transition-timing-function: ease-in;
+  transition: background 800ms linear;
 }
 
 li {
@@ -60,7 +60,7 @@ a {
 }
 
 .sticky {
-  background-color: transparent;
+  background: transparent;
   z-index: 100;
 }
 

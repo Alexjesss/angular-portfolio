@@ -1,4 +1,5 @@
 import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-home-page',
@@ -22,6 +23,7 @@ export class HomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }
