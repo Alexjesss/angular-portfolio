@@ -11,6 +11,8 @@
   height: 183px;
   background-image: url(../../../assets/wave.svg);
   background-position: -759px;
+  background-repeat: repeat-x;
+  animation: animated 15s linear infinite;
 }
 
 .wave {
@@ -79,4 +81,14 @@
   opacity: 0.8;
   width: 30%;
   transform: scale(0.5);
+}
+
+@keyframes animated {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 1000px;
+  }
+
 }

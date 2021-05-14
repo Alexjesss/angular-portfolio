@@ -7,21 +7,16 @@ import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/c
 })
 export class HomepageComponent implements OnInit {
 
-  para = false;
+  initialTop = 0;
+  parallaxRatio = 1;
 
   @ViewChild('parallax') parallax: ElementRef;
 
-  @HostListener('document:scroll', ['$event'])
+  @HostListener('window:scroll', ['$event'])
   // tslint:disable-next-line:typedef
-  onWindowScroll(){
-    const windowScroll = window.pageYOffset;
+  onWindowScroll(event){
 
-    if (windowScroll > this.parallax.nativeElement.offsetHeight){
-      this.para = true;
-    }
-    else {
-      this.para = false;
-    }
+    this.parallax.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
   }
 
   constructor() { }
