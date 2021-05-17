@@ -21,7 +21,8 @@ export class HomepageComponent implements OnInit {
     this.para.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
   }
 
-  constructor() { }
+
+constructor() { }
 
   ngOnInit(): void {
     AOS.init();
