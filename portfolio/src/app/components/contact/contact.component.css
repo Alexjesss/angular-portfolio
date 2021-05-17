@@ -1,0 +1,29 @@
+.hero-about {
+  height: 550px;
+  width: 100%;
+}
+
+.hero-body {
+  position: relative;
+  top: 68px;
+}
+
+.section {
+  height: 550px;
+  width: 100%;
+  background-color: ivory;
+}
+
+.formArea {
+  transform: translate(0, 179px);
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+button {
+  margin-top: 10px;
+}
