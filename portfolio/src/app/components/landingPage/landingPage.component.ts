@@ -18,17 +18,18 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // @HostListener('document:mousemove', ['$event'])
-  // moveBackground(e): void {
-  //   const mouseX = e.clientX;
-  //   const mouseY = e.clientY;
-  //
-  //   const calculateX = mouseX / (this.windowWidth / 7);
-  //   const calculateY = mouseY / (this.windowHeight / 7);
-  //
-  //   hero.style.transform = `translate(-' + this.calculateX.toString() + '%,-' + calculateY.toString() + '%)'`;
-  //   console.log(this.hero);
-  // }
+  @HostListener('document:mousemove', ['$event'])
+  moveBackground(e): void {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    const hero = this.hero;
+    const calculateX = mouseX / (this.windowWidth / 7);
+    const calculateY = mouseY / (this.windowHeight / 7);
+
+    this.hero.style.transform = 'translate(-"\'" + this.calculateX.toString() + \'%,-\' + calculateY.toString() + \'%)';
+    console.log(this.hero);
+  }
 }
 
 

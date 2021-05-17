@@ -1,0 +1,19 @@
+.hero-about {
+  height: 550px;
+  width: 100%;
+}
+
+.hero-body {
+  position: relative;
+  top: 68px;
+}
+
+.section {
+  height: 550px;
+  width: 100%;
+  background-color: ivory;
+}
+
+.text {
+  transform: translate(0, 179px);
+}
